@@ -17,7 +17,7 @@ spec:
         - name: dockerhub-secret
       containers:
         - name: bankapp-container
-          image: 
+          image: jyothiharsha21/bankapp:appimage
           ports:
             - containerPort: 80
           envFrom:

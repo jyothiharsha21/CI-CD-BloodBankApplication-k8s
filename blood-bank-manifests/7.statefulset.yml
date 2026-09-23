@@ -17,8 +17,8 @@ spec:
       imagePullSecrets:
         - name: dockerhub-secret
       containers:
-        - name: bankapp-container
-          image: 
+        - name: mysqldb
+          image: jyothiharsha21/bankapp:dbimage
           ports:
             - containerPort: 3306
           envFrom:
@@ -35,7 +35,7 @@ spec:
               memory: "256Mi"
           volumeMounts:
             - name: mysql-persistent-storage
-              mountPath: /var/lib/mysql
+              mountPath: /usr/share/nginx/html
   volumeClaimTemplates:
     - metadata:
         name: mysql-persistent-storage
