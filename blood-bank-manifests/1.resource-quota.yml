@@ -5,8 +5,8 @@ metadata:
   name: bankapp-quota
 spec:
   hard:
-    pods: "10"
-    requests.cpu: "1000m"
-    limits.cpu: "2000m"
-    requests.memory: "500Mi"
-    limits.memory: "1000Mi"
+    pods: "4"
+    requests.cpu: "2"
+    limits.cpu: "4"
+    requests.memory: "4Gi"
+    limits.memory: "8Gi"
